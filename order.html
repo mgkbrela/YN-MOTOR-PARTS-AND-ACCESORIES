@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <title>YN MOTOR PARTS AND ACCESORIES</title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+3:200,300,regular,500,600,700,800,900,200italic,
-                300italic,italic,500italic,600italic,700italic,800,italic,900italic" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
     <style>
       * {
         margin: 0;
@@ -96,278 +96,80 @@
           </ul>
       </header>
 <!-------------------------->
-<main class="container">
-
-    <h1 class="heading">
-        <ion-icon name="cart-outline"></ion-icon> Shopping Cart 
-    </h1>
-    
-    <div class="item-flex">
-
-
-        <section class="checkout">
-
-            <h2 class="section-heading">Payment Details</h2>
-            
-            <div class="payment-form">
-
-                <div class="payment-method">
-
-                    <button class="method selected">
-                        <ion-icon name="card"></ion-icon>
-
-                        <span>Credit Card</span>
-
-                        <ion-icon class="checkmark fill" name="checkmark-circle"></ion-icon>
-                    </button>
-
-                    <button class="method">
-                        <ion-icon name="logo-paypal"></ion-icon>
-                        
-                        <span>PayPal</span>
-
-                        <ion-icon class="checkmark" name="checkmark-circle-outline"></ion-icon>
-                    </button>
-                </div>
-
-                <form action="#">
-
-                    <div class="cardholder-name">
-                        <label for="cardholder-name" class="label-default"> Cardholder name</label>
-                        <input type="text" name="cardholder-name" id="cardholder-name" class="input-default">
-                    </div>
-
-                    <div class="card-number">
-                        <label for="card-number" class="label-default"> Card Number</label>
-                        <input type="number" name="card-number" id="card-number" class="input-default">
-                    </div>
-
-                    <div class="input-flex">
-
-                        <div class="expire-date">
-                            <label for="" class="label-default">Expiration Date</label>
-
-                            <div class="input-flex">
-
-                                <input type="number" name="day" id="expire-date" placeholder="31" min="1" max="31"
-                                class="input-default">
-                                /
-                                <input type="number" name="month" id="expire-date" placeholder="12" min="1" max="12"
-                                class="input-default">
-                            </div>
-                        </div>
-
-                        <div class="cvv">
-                            <label for="cvv" class="label-default"> CVV</label>
-                            <input type="number" name="cvv" id="cvv" class="input-default">
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-            <button class="btn btn-primary">
-                <b>Pay</b> P <span id="payAmount">2.15</span>
-            </button>
-        </section>
-
-        <section class="cart">
-            <div class="cart-item-box">
-
-                <h2 class="section-heading">Order Summary</h2>
-                
-                <div class="product-card">
-
-                    <div class="card">
-
-                        <div class="img-box">
-                            <img src="./img/277425156_1003528263896382_1594414939765273775_n.jpg" alt="Bolt Cap"
-                            width="80px" class="product-img">
-                    
-                        </div>
-                    </div>
-
-                    <div class="detail">
-                        <h4 class="product-name">Bolt Cap</h4>
-
-                        <div class="wrapper">
-                            <div class="product-qty">
-                                <button id="decrement">
-                                    <ion-icon name="remove-outline"></ion-icon>
-                                </button>
-
-                                <span id="quantity">1</span>
-
-                                <button id="increment">
-                                    <ion-icon name="add-outline"></ion-icon>
-                                </button>
-                            </div>
-
-                            <div class="price">
-                                P <span id="price">61.00</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <button id="product-close-btn">
-                        <ion-icon name="close-outline"></ion-icon>
-                    </button>
-                </div>
-
-                <div class="product-card">
-
-                    <div class="card">
-
-                        <div class="img-box">
-                            <img src="./img/277541525_1046415619419113_2541964463970537671_n.jpg" alt="MSM Brakeshoe XRM"
-                            width="80px" class="product-img">
-                    
-                        </div>
-                    </div>
-
-                    <div class="detail">
-                        <h4 class="product-name">MSM Brakeshoe XRM</h4>
-
-                        <div class="wrapper">
-                            <div class="product-qty">
-                                <button id="decrement">
-                                    <ion-icon name="remove-outline"></ion-icon>
-                                </button>
-
-                                <span id="quantity">1</span>
-
-                                <button id="increment">
-                                    <ion-icon name="add-outline"></ion-icon>
-                                </button>
-                            </div>
-
-                            <div class="price">
-                                P <span id="price">80.00</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <button id="product-close-btn">
-                        <ion-icon name="close-outline"></ion-icon>
-                    </button>
-                </div>
-                
-                <div class="product-card">
-
-                    <div class="card">
-
-                        <div class="img-box">
-                            <img src="./img/277512021_3043950319191636_872201569186655329_n.jpg" alt="GPC Brakepad Beat 110 New"
-                            width="80px" class="product-img">
-                    
-                        </div>
-                    </div>
-
-                    <div class="detail">
-                        <h4 class="product-name">GPC Brakepad Beat 110 New</h4>
-
-                        <div class="wrapper">
-                            <div class="product-qty">
-                                <button id="decrement">
-                                    <ion-icon name="remove-outline"></ion-icon>
-                                </button>
-
-                                <span id="quantity">1</span>
-
-                                <button id="increment">
-                                    <ion-icon name="add-outline"></ion-icon>
-                                </button>
-                            </div>
-
-                            <div class="price">
-                                P <span id="price">80.00</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <button id="product-close-btn">
-                        <ion-icon name="close-outline"></ion-icon>
-                    </button>
-                </div>
-
-                <div class="product-card">
-
-                    <div class="card">
-
-                        <div class="img-box">
-                            <img src="./img/277216705_663146784989628_4544318476157742779_n.jpg" alt="Osaki Chain 420x110L"
-                            width="80px" class="product-img">
-                    
-                        </div>
-                    </div>
-
-                    <div class="detail">
-                        <h4 class="product-name">Osaki Chain 420x110L</h4>
-
-                        <div class="wrapper">
-                            <div class="product-qty">
-                                <button id="decrement">
-                                    <ion-icon name="remove-outline"></ion-icon>
-                                </button>
-
-                                <span id="quantity">1</span>
-
-                                <button id="increment">
-                                    <ion-icon name="add-outline"></ion-icon>
-                                </button>
-                            </div>
-
-                            <div class="price">
-                                P <span id="price">560.00</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <button id="product-close-btn">
-                        <ion-icon name="close-outline"></ion-icon>
-                    </button>
-                </div> 
-            </div>
-
-            <div class="wrapper">
-
-                <div class="discount-token">
-
-                    <label for="token" class="label-default"> Gift Card/Discount Code</label>
-
-                    <div class="wrapper-flex">
-
-                        <input type="text" name="discount-token" id="discount-token" class="input-default">
-
-                        <button class="btn btn-outline">Apply</button>
-                    </div>
-                </div>
-
-                <div class="amount">
-
-                    <div class="subtotal">
-                        <span>Subtotal</span> <span> P <span id="subtotal">781.00</span></span>
-                    </div>
-
-                    <div class="tax">
-                        <span>Tax</span> <span> P <span id="tax">5.00</span></span>
-                    </div>
-
-                    <div class="shipping">
-                        <span>Shipping</span> <span> P <span id="shipping">0.00</span></span>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-</main>
-
-
-
-<script src="./script.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-    </section>
+<script>
+  function finalCost(){
+      var foodItem = document.getElementById("food_item").value;
+      var specialItemm = document.getElementById("special_item").value;
+      var foodQuatity = document.getElementById("food_quantity").value;
+      var deliveryType = document.getElementById("delivery_type").value;
+      var deliveryArea = document.getElementById("delivery_area").value;
+
+      var all_food = (parseInt(foodItem)*7) + (parseInt(specialItemm)*3) + ((foodQuatity)*2) + (parseInt(deliveryType)*4) + (parseInt(deliveryArea)*3)
+      document.getElementById("result").innerHTML = all_food;
+  }
+  function ok_result(){
+      document.getElementById("okResult").style.display="block";
+      document.getElementById("okResult").style.backgroundColor="#DCE775";
+      document.getElementById("input_box").style.display="none";
+  }
+</script>
+
+<div class="online_food_delivery_box animated bounceInDown" id="input_box">
+  <h3> Online Delivery Form </h3><br>
+  <form>
+      <div class="form-group">
+          <select class="form-control" id="food_item" onchange="finalCost()">
+              <option value="0"> Select Parts Item: </option>
+              <option value="1"> Bolt Cap </option>
+              <option value="2"> MSM Brakeshoe XRM </option>
+              <option value="3"> GPC Brakepad Beat 110 New </option>
+              <option value="4"> Osaki Chain </option>
+              <option value="5"> Castrol Activ 800mL  </option>
+              <option value="6"> Socket 14mm  </option>
+              <option value="7"> MSM Pulley Ball Clamp Mio </option>
+          </select>
+      </div>
+      <div class="form-group">
+          <select class="form-control" id="special_item" onchange="finalCost()">
+              <option value="0"> Want Special Item ?</option>
+              <option value="2"> Yes </option>
+              <option value="0"> No </option>
+          </select>
+      </div>
+      <div class="form-group">
+          <input type="number" class="form-control" id="food_quantity" placeholder="Quantity" onkeyup="finalCost()" >
+      </div>
+      <div class="form-group">
+          <select class="form-control" id="delivery_type" onchange="finalCost()">
+              <option value="0"> Delivery Type - </option>
+              <option value="0"> Normal </option>
+              <option value="2"> Emergency </option>
+          </select>
+      </div>
+      <div class="form-group">
+          <select class="form-control" id="delivery_area" onchange="finalCost()">
+              <option value="0"> Select Delivery Area ... </option>
+              <option value="1"> Dhanmondi </option>
+              <option value="2"> Gulshan </option>
+              <option value="3"> Mohammadpur  </option>
+              <option value="4"> Uttara </option>
+              <option value="5"> Mirpur  </option>
+              <option value="6"> Banani  </option>
+              <option value="7"> Magbazar </option>
+          </select>
+      </div><br>
+      <div class="form-group">
+          <label>Total Cost ($) : </label>
+          <span id="result" style="background-color: #8c7269;color: #fff;padding: 6px 70px;font-weight: 600;font-size: 18px; margin-left: 10px;border-radius: 5px;">0</span>
+          <input type="button" value="SUBMIT" class="btn btn-primary" style="float: right" id="ok" onclick="ok_result()">
+      </div>
+  </form>
+</div>
+
+<div class="result_box animated zoomIn" style="display: none;" id="okResult">
+  <h3 class="result_box_text" id="ok_text"> Your order is successfully submitted. Please keep patience, we will come to you soon.<br><br><span> --  Thank You  -- </span></h3><br>
+    <!------------------------------------->
+</section>
     <style>
       .content {
         position: relative;
