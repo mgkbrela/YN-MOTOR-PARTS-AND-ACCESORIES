@@ -104,6 +104,11 @@
 
 /* About Us */
 
+.row ul {
+    padding: 150px!important;
+
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 *{
@@ -111,9 +116,10 @@
     padding: 0;
     margin: 0;
 }
+
 body{
     font-family: 'Playfair Display', serif;
-    display: grid;
+    display: initial;
     align-content: center;
     min-height: 100vh;
 }
