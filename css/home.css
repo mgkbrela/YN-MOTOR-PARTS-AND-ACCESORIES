@@ -53,8 +53,8 @@ section .circle {
     display: inline-block;
     margin-top: 20px;
     padding:8px 20px;
-    background: #e51e2a;
-    color: #fff;
+    background: #cebe21; 
+    color: black;
     border-radius: 40px;
     font-weight: 500;
     letter-spacing: 1px;

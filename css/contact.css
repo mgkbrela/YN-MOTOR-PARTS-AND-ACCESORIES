@@ -2,6 +2,10 @@ body{
 	background: #b892ff;
     background: linear-gradient(180deg, #231c9f, #b892ff)!important;
 }
+
+.container {
+    margin-bottom: 100px;
+}
 .contact-form{
     background: #fff;
     margin-top: 10%;
@@ -38,7 +42,7 @@ body{
     border: none;
     border-radius: 1rem;
     padding: 1.5%;
-    background: #dc3545;
+    background: #00bfff;
     font-weight: 600;
     color: #fff;
     cursor: pointer;
@@ -84,7 +88,7 @@ body{
             vertical-align: middle; 
         }
 		.box > .icon:hover > .image { 
-            background: #dc3545; 
+            background: #b892ff; 
         }
 
 		.box > .icon > .image > i { 
@@ -165,6 +169,7 @@ body{
 			.second-portion
 			{
 				margin-top:25px; 
+                padding-bottom: 100px!important;
 			}
 		}
 
