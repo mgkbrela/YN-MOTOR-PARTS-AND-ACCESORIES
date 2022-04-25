@@ -1,0 +1,126 @@
+body {
+  font-family: Arial;
+  background: #8a9de1!important;
+}
+button, input {
+  overflow: auto;
+    max-width: 10em!important;
+    margin-left: -0.184em!important
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+  width: 100%;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+  cursor: pointer;
+  background-color: #3a44aa;
+  border: none;
+  color: white;
+  padding: 0.3em;
+  margin: 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+.banner {
+  width: 100%;
+}
+}
+div.content {
+  padding-bottom:0px;
+}
+/* Header/Blog Title */
+.header {
+  padding: 0;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-image: url(../img/1a.png);
+  background-size:cover;
+  width: 100%;
+  padding: 0;
+}
+.fakeimg1 {
+  background-image: url(../img/082721-Black-Magic-Motorcycle-Tires-1-14-768x471.jpg);
+  background-size:cover;
+  width: 100%;
+  padding: 0;
+}
+.fakeimg2 {
+  background-image: url(../img/oil.jpg);
+  background-size:cover;
+  width: 100%;
+  padding: 0;
+}
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/** LIGHTBOX MARKUP **/
+
+.lightbox {
+  /* Default to hidden */
+  display: none;
+
+  /* Overlay entire screen */
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  /* A bit of padding around image */
+  padding: 1em;
+
+  /* Translucent background */
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Unhide the lightbox when it's the target */
+.lightbox:target {
+  display: block;
+}
+
+.lightbox span {
+  /* Full width and height */
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  /* Size and position background image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

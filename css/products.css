@@ -91,6 +91,11 @@
   .column {
     float: left;
     width: 16.66%;
+    opacity: 0.8;
+  }
+
+  .column:hover {
+    opacity: 1;
   }
   
   /* Add a transparency effect for thumnbail images */
