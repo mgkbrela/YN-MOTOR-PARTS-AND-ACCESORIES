@@ -1,7 +1,7 @@
 /* order */
 #output {
     background-color: #c5edf3;
-    color: #463c39;
+    color: #394546;
     font-size: 17px;
     padding: 30px 30px;
     width: 40%;
@@ -77,7 +77,7 @@
     margin-right: 350px;
     margin-bottom: 60px;
     padding: 20px 40px;
-    background-color: #d4c0b9;
+    background-color: #8984e8;
     box-shadow: 3px 5px 10px #714c4a;
 }
 .result_box {
@@ -226,17 +226,17 @@ body {
    */
    
    h3 {
-     color: rgba(31,181,172,.9);
+     color: #0d0862;
    }
    .text{
-       color: rgba(31,181,172,.9);
+       color: #090575;
        text-align: center;
    }
    
    
    .folded-corner:hover .text{
        visibility: visible;
-       color: #000000;;
+       color: #09054d;
    }
    .Services-tab{
        margin-top:20px;
@@ -255,10 +255,10 @@ body {
      color: #999; 
      background: transparent;
      transition: all ease .5s;
-     border: 1px solid rgba(31,181,172,.9);
+     border: 1px solid #8984e8;
    }
    .folded-corner:hover{
-       background-color: rgba(31,181,172,.9);
+       background-color: #8984e8;
    }
    
    /*
@@ -272,7 +272,7 @@ body {
      right: 0;
      border-style: solid;
      border-width: 0 0px 0px 0;
-     border-color: #ddd #000;
+     border-color: #ddd #090575;
      transition: all ease .3s;
    }
    
@@ -280,23 +280,23 @@ body {
      on li hover make paper fold larger
    */
    .folded-corner:hover:before {
-       background-color: #D00003;
+     background-color: #D00003;
      border-width: 0 50px 50px 0;
      border-color: #eee #000;
      
    }
    
    .service_tab_1{
-       background-color: #000;
+       background-color: rgb(247, 241, 241);
    }
    .service_tab_1:hover .fa-icon-image{
-       color: #000;
+       color: #090575;
        transform: rotate(360deg) scale(1.5);
    }
    
    
    .fa-icon-image{
-       color: rgba(31,181,172,.9);
+       color: #090575;
        display: inline-block;
        font-style: normal;
        font-variant: normal;
